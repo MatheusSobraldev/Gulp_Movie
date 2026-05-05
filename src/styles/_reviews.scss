@@ -1,0 +1,53 @@
+.reviews {
+    padding: 90px clamp(22px, 6vw, 86px) 110px;
+    background:
+        linear-gradient(135deg, rgba(216, 255, 102, 0.14), rgba(241, 112, 83, 0.08)),
+        #101011;
+
+    &__intro {
+        width: min(860px, 100%);
+        margin-bottom: 36px;
+
+        h2 {
+            margin-top: 12px;
+            color: #ffffff;
+            font-size: clamp(32px, 5vw, 62px);
+            line-height: 1;
+            letter-spacing: 0;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+}
+
+.review {
+    min-height: 260px;
+    padding: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.06);
+
+    strong {
+        color: #d8ff66;
+        font-size: 42px;
+        line-height: 1;
+    }
+
+    h3 {
+        margin-top: 24px;
+        color: #ffffff;
+        font-size: 24px;
+        letter-spacing: 0;
+    }
+
+    p {
+        margin-top: 14px;
+        color: rgba(248, 255, 244, 0.72);
+        font-size: 16px;
+        line-height: 1.65;
+    }
+}

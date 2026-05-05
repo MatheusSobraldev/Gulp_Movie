@@ -1,0 +1,94 @@
+@media (max-width: 900px) {
+    .character,
+    .character--reverse,
+    .friendship,
+    .reviews__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .character--reverse .section__copy {
+        order: 0;
+    }
+
+    .visuals__carousel {
+        grid-template-columns: 44px minmax(0, 1fr) 44px;
+        gap: 10px;
+    }
+
+    .visuals__button {
+        width: 44px;
+        height: 44px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        min-height: 92vh;
+        padding: 142px 20px 54px;
+        background:
+            linear-gradient(180deg, rgba(3, 9, 10, 0.28) 0%, rgba(3, 9, 10, 0.9) 63%, #06100f 100%),
+            url("../images/hero-celular.png") center top / cover no-repeat;
+
+        h1 {
+            font-size: 46px;
+        }
+    }
+
+    .section {
+        width: calc(100% - 36px);
+        padding: 64px 0;
+    }
+
+    .friendship {
+        min-height: auto;
+        margin-top: 0;
+
+        &__image {
+            min-height: 420px;
+        }
+    }
+
+    .review {
+        min-height: auto;
+    }
+
+    .visuals__carousel {
+        grid-template-columns: 1fr;
+    }
+
+    .visuals__viewport {
+        grid-row: 1;
+    }
+
+    .visuals__button {
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+        transform: translateY(-50%);
+    }
+
+    .visuals__button--prev {
+        left: 10px;
+    }
+
+    .visuals__button--next {
+        right: 10px;
+    }
+
+    .visuals__slide img {
+        height: 330px;
+    }
+
+    .site-footer {
+        padding: 42px 20px 28px;
+
+        &__content {
+            flex-direction: column;
+        }
+
+        &__nav {
+            justify-content: flex-start;
+        }
+    }
+}
